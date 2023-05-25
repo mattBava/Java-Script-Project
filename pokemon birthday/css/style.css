@@ -22,13 +22,13 @@ div.imgBox{
     left: 50%;
     transform: translate(-50%);
     position: relative;
-    width: 25%;
+    width:95%;
     background-color:#FFAD00;
     border-radius: 4px;
 }
 img{
     width: 100%;
-    height: 400px;
+    height: 25%;
 }
 
 
@@ -41,7 +41,7 @@ div.input{
     transform: translate(-50%, -50%);
     background-color:#FFAD00;
     padding: 10px;
-    width :27%;
+    width :98%;
     border-radius: 4px
 }
 #birthday{
