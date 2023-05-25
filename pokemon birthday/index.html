@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jsquerry.js"></script>
+    <script src="js/script.js"></script>
+    <div class="layout">
+      <div class="input , lg, md">
+        <input
+          class="form-control me-2"
+          id="birthday"
+          type="search"
+          placeholder="Enter Birthday mm/dd/yyyy"
+          aria-label="Search"
+        />
+        <input
+          class="form-control me-2"
+          id="Initial"
+          type="search"
+          placeholder="PLease enter your FIRST NAME"
+          aria-label="Search"
+        />
+        <button
+          class="btn-outline-success"
+          type="submit"
+          onclick="getDate();"
+          id="#change"
+        >
+          Run
+        </button>
+      </div>
+      <div class="imgBox , lg , md">
+        <img
+          id="poke"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="Your Pokemon"
+        />
+        <h1 id="pokeName"></h1>
+      </div>
+    </div>
+  </body>
+</html>
