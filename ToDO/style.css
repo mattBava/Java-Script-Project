@@ -1,0 +1,109 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 232, 237);
+    color: rgb(0, 0, 0);
+    width: 99%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+
+
+
+#inputField {
+    width: 300px;
+    height: 46px;
+    border-width: 0;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+    border-radius: 10px;
+    position: relative;
+}
+.inputs{
+    position: flex;
+float: left;
+   padding: 1px;
+   width: 50%;
+}
+#addToDo {
+    height: 50px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.to-dos {
+    color: black;
+
+    margin-top: 25px;
+    padding: 10px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.postit{
+    background-color: #feff9c;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 90%;
+    height: 250px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    float: left;
+}
+
+.postit:hover{
+  background-color: #fff740;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+h1.ist{
+    background-color: #fff740;
+    padding: 10px;
+    border-radius: 15px;
+    vertical-align: middle;
+    width:fit-content;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   .m{width: 30%;}
+    .mi{ translate: 75%;}
+
+  }
+  @media only screen and (min-width: 1040px) {
+    .l{width: 14.9%;}
+    .li{translate: 75%;}
+    .lh{width: 33%;}
+   }
+ 
