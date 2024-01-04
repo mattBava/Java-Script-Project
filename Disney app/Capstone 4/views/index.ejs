@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find Your Birthday Pokemon</h1>
+      <p>
+        Enter your first name and birth month to find which pokemon you are!!!
+      </p>
+      <div class="input">
+        <form action="/gen" method="POST">
+          <input type="text" name="name" placeholder="First Name" /><br />
+          <label for="birthMonth"></label>
+          <select name="birthMonth">
+            <option value="jan">January</option>
+            <option value="feb">Febuary</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="jun">June</option>
+            <option value="jul">July</option>
+            <option value="aug">August</option>
+            <option value="sep">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option></select
+          ><br />
+          <input type="submit" class="right" value="Get Your Pokemon" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

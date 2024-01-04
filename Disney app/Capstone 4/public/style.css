@@ -1,0 +1,53 @@
+:root {
+    --main: #3466AF;
+    --sec: #FFAD00;
+    --thr: #FFCB05;
+}
+
+* {
+    font-family: 'Sigmar One', cursive;
+}
+
+body{
+    background-color: var(--main);
+}
+input{
+    margin: 10px;
+}
+select{
+    margin: 10px;
+   }
+.container{
+    padding-top: 12vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+.input{
+background-color: var(--sec);
+padding: 10px;
+border-radius: 10%;
+}
+.card{
+    
+    background-color: var(--thr);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#pokemon{
+    color: black;
+}
+
+img{
+    width: 300px;
+}
