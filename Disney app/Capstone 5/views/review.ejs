@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <% if (check==true) { %>
+    <div class="container choice">
+      <h1 id="title">Choose Your Book</h1>
+
+      <% for( let i = 0; i < url.length; i++ ) { %>
+      <div class="container book row">
+        <div class="coverMain">
+          <img
+            src="https://covers.openlibrary.org/b/id/<%= url[i].cover_i  %>-M.jpg"
+            alt="No Cover Found"
+          />
+        </div>
+
+        <div class="txt">
+          <h1><%= url[i].title %></h1>
+          <form action="/select" method="POST">
+            <button class="button-75" name="<%= i %>">Select</button>
+          </form>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <% } else if(url === null) { %>
+
+    <div class="container Search">
+      <form action="/review" method="POST">
+        <input
+          type="text"
+          id="bookName"
+          name="isbn"
+          placeholder="Enter Title"
+        />
+        <br />
+        <button class="button-75">Search</button>
+      </form>
+    </div>
+
+    <% } else { %>
+    <div class="container">
+      <div class="coverMain">
+        <img
+          src="https://covers.openlibrary.org/b/id/<%= url  %>-M.jpg"
+          alt="Cover of Image"
+        />
+      </div>
+
+      <form action="/post" method="POST">
+        <textarea
+          rows="4"
+          cols="50"
+          class="txt post"
+          name="newPost"
+          placeholder="Write Your Review"
+        ></textarea
+        ><br />
+        <% for( let index = 0; index < 5; index++ ) { %>
+        <button class="star" name="<%= index %>">☆</button>
+        <% } %>
+      </form>
+    </div>
+
+    <% } %>
+  </body>
+</html>

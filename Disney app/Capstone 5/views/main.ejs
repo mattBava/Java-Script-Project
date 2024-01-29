@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <% if (list.length == 0) { %>
+    <h1>No Reviews Yet</h1>
+    <% } else { %>
+    <div class="container">
+      <h1>Bavas Book Reviews</h1>
+      <% for( let i = 0; i < list.length; i++ ) { %>
+      <div class="book">
+        <div class="coverMain">
+          <img
+            src="https://covers.openlibrary.org/b/id/<%= list[i].cover  %>-M.jpg"
+            alt="No Cover Found"
+          />
+        </div>
+
+        <div class="txt">
+          <h1 class="title"><%= list[i].book %></h1>
+          <br />
+          <p class="review"><%= list[i].review %></p>
+          <br />
+          <h2><%= list[i].starts %> STARS</h2>
+          <br />
+        </div>
+        <form action="/edit" method="POST">
+          <button class="edit button-75" name="<%= list[i].id %>">Edit</button>
+        </form>
+      </div>
+      <% } %> <% } %>
+      <div class="container start">
+        <form action="/review" method="GET">
+          <button class="button-75">Start A Review</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

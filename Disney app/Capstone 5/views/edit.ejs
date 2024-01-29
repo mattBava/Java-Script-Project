@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      src="https://covers.openlibrary.org/b/id/<%= edit[id].cover  %>-M.jpg"
+      alt="No Cover Found"
+    />
+    <h2><%= edit[id].book %></h2>
+
+    <form action="/update" method="POST">
+      <textarea rows="4" cols="50" class="txt post" name="newPost">
+    <%= edit[id].review %>
+      </textarea
+      ><br />
+      <% for( let index = 0; index < 5; index++ ) { %>
+      <button class="button-75" name="<%= index %>"></button>
+      <% } %>
+    </form>
+  </body>
+</html>
