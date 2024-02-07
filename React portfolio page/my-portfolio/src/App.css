@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+body{
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  display: grid;
+  font-family: 'Libre Baskerville', serif;
+font-family: 'Source Serif 4', serif;
+  color: #422F01;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-size:77pt;
+  padding: 0;
+  margin: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2{
+  font-size: 50pt;
+}
+h5{
+  font-size: 20pt;
+}
+p{
+  font-size: 20pt;
+}
+.home{
+ display: grid;
+  padding: 98px;
+  height: 30vw;
+  
+}
+.about{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 98px;
+  height: 30vw;
+}
+.text{
+  width: 40vw;
+}
+#me{
+  height: 30vw; 
+  margin-left: 400px; 
+  border-radius: 5px;
+}
+.img{
+  width: 40vw;
+}
+.projects{
+  display: grid;
+  padding: 98px;
+  height: 30vw;
+
+}
+.contact{
+  display: grid;
+  padding: 98px;
+  height: 30vw
+}
+
+.green{
+   background-color: #E6FFE5;
+}
+.white{
+  background-color: #FFFFFE;
+}
+
+button{
+  width: 309.5px;
+  background-color: #422F01;
   color: white;
+  border-radius: 50px;
+  height:76.4px;
+  font-size: 18pt;
 }
 
-.App-link {
-  color: #61dafb;
+.prj{
+  height: 250px;
+  width: 450px;
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plan-title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+.pricing-plan{
+
+text-align: center;
+padding: 20px;
+flex: 1;
+}
+ul{
+list-style-type: none;
+}
+
+.pricing-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+
+}
+
+#mgb{
+  margin-bottom: 10px;
+} 
+@media (max-width: 600px) {
+  .pricing-container{
+flex-direction: column;
+}
+*{
+  max-width: 100vw;
+}
+h1{
+  font-size: 60pt;
+}
+h2{
+  font-size: 45pt;
+}
+h5{
+  font-size: 20pt;
+}
+p{
+  font-size: 20pt;
+}
+
+.home{
+  padding: 0px;
+   padding-left: 10px;
+   height: 150vw
+   
+}
+.about{
+   display: flex;
+   flex-direction: column;
+   padding: 0px;
+   text-align: center;
+   height: auto
+}
+.text{
+   width: auto;
+}
+#me{
+  height: auto; 
+  float: left;
+  margin-left: 0px; 
+  border-radius: 5px;
+  width: 90vw;
+}
+.img{
+  width: auto;
+}
+
+.projects{
+   display: grid;
+   padding: 0px;
+   height: auto;
+ 
+}
+.contact{
+   display: grid;
+   padding: 0px;
+   height: 150vw
+}
+.prj{
+  height: 250px;
+  width: 90vw;
+  margin-bottom: 50px;
+}
 }
